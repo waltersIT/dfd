@@ -431,3 +431,7 @@ nav input{
   border-top: 1px solid #444;
   margin-top: 20px;
 }
+
+:root {
+  --header-color-new: rgb(0, 43, 11); /**really dark green for color scheme :( **/
+}
