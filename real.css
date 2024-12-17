@@ -10,7 +10,7 @@ nav{
   z-index: 99;
   width: 100%;
   
-  background: #242526; 
+  background: var(--header-color-new); 
 }
 nav .wrapper{
   position: relative;
@@ -45,20 +45,20 @@ nav .wrapper{
   transition: all 0.3s ease;
 }
 .nav-links li a:hover{
-  background: #3A3B3C;
+  background: var(--header-color-new-hover);
 }
 .nav-links .mobile-item{
   display: none;
 }
 .nav-links .drop-menu{
   position: absolute;
-  background: #242526;
+  background: var(--header-color-new);
   width: 180px;
   line-height: 45px;
   top: 85px;
   opacity: 0;
   visibility: hidden;
-  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 10px var(--header-color-new);
 }
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box{
@@ -107,7 +107,7 @@ nav .wrapper{
 }
 .content .row .mega-links{
   margin-left: -40px;
-  border-left: 1px solid rgba(255,255,255,0.09);
+  border-left: 1px solid var(--header-color-new);
 }
 .row .mega-links li{
   padding: 0 20px;
@@ -145,7 +145,7 @@ nav .wrapper{
     max-width: 350px;
     top: 0;
     left: -100%;
-    background: #242526;
+    background: var(--header-color-new);
     display: block;
     padding: 50px 10px;
     line-height: 50px;
@@ -158,10 +158,10 @@ nav .wrapper{
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #242526;
+    background: var(--header-color-new);
   }
   ::-webkit-scrollbar-thumb {
-    background: #3A3B3C;
+    background: var(--header-color-new-hover);
   }
   #menu-btn:checked ~ .nav-links{
     left: 0%;
@@ -210,7 +210,7 @@ nav .wrapper{
     transition: all 0.3s ease;
   }
   .nav-links .mobile-item:hover{
-    background: #3A3B3C;
+    background: var(--header-color-new-hover);
   }
   .drop-menu li{
     margin: 0;
@@ -376,7 +376,7 @@ nav input{
   height: 80px;
   justify-content: center;
   align-items: center;
-  background-color: rgb(167, 167, 167);
+  background-color: rgb(213, 180, 133);
   /**border-bottom: 2px solid rgb(131, 131, 131);**/
 }
 
@@ -384,7 +384,7 @@ nav input{
 
 /* Footer Styles */
 .footer {
-  background-color: #333;
+  background-color: var(--header-color-new);
   color: #fff;
   padding: 20px 0;
 }
@@ -433,5 +433,6 @@ nav input{
 }
 
 :root {
-  --header-color-new: rgb(0, 43, 11); /**really dark green for color scheme :( **/
+  --header-color-new: rgb(0, 46, 12); /**really dark green for color scheme :( **/
+  --header-color-new-hover: rgb(0, 75, 19);
 }
